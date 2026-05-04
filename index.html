@@ -11,40 +11,38 @@
 body{
     margin:0;
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e3a8a,#020617);
+    background:linear-gradient(135deg,#020617,#1e3a8a,#0ea5e9,#020617);
     color:#fff;
-    scroll-behavior:smooth;
 }
 
 /* HEADER */
 header{
     position:sticky;
     top:0;
-    background:rgba(15,23,42,0.85);
+    background:rgba(0,0,0,0.6);
     backdrop-filter:blur(10px);
     padding:15px;
     text-align:center;
-    z-index:1000;
 }
 
-/* 🔥 3D MULTICOLOR LOGO */
+/* 🔥 3D MULTICOLOR LOGO (UPGRADED) */
 .logo{
-    font-size:32px;
+    font-size:34px;
     font-weight:900;
-    background:linear-gradient(45deg,#38bdf8,#a78bfa,#22c55e,#facc15);
+    background:linear-gradient(45deg,#38bdf8,#a78bfa,#22c55e,#facc15,#f43f5e);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     text-shadow:
         2px 2px 0 #000,
         4px 4px 0 #1e293b,
-        6px 6px 15px rgba(0,0,0,0.8);
+        6px 6px 20px rgba(0,0,0,0.9);
+    letter-spacing:1px;
 }
 
 /* HERO */
 .hero{
     text-align:center;
     padding:80px 20px;
-    background:linear-gradient(135deg,#1e293b,#0ea5e9,#020617);
 }
 
 .hero h1{
@@ -62,6 +60,7 @@ header{
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
+    box-shadow:0 0 10px rgba(56,189,248,0.5);
 }
 
 .btn:hover{
@@ -76,7 +75,8 @@ section{
 
 /* CARDS */
 .card{
-    background:rgba(30,41,59,0.7);
+    background:rgba(30,41,59,0.6);
+    backdrop-filter:blur(8px);
     padding:20px;
     margin:15px;
     border-radius:15px;
@@ -86,28 +86,17 @@ section{
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-10px) scale(1.05);
 }
 
-/* GALLERY */
-.gallery img{
-    width:250px;
-    margin:10px;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.gallery img:hover{
-    transform:scale(1.1);
-}
-
-/* VIDEO */
+/* VIDEO (NO SLIDER, DIRECT PLAY) */
 iframe{
     width:90%;
-    max-width:500px;
-    height:280px;
+    max-width:600px;
+    height:320px;
     border-radius:15px;
     margin:10px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
 /* CTA */
@@ -151,11 +140,10 @@ footer{
     <p>We turn your ideas into professional visuals</p>
 
     <a href="https://wa.me/962778293108"><button class="btn">Order Now</button></a>
-    <a href="#services"><button class="btn">View Services</button></a>
 </section>
 
 <!-- SERVICES -->
-<section id="services">
+<section>
     <h2>My Services</h2>
 
     <div class="card">Logo Design</div>
@@ -165,36 +153,23 @@ footer{
     <div class="card">2D / 3D Design</div>
 </section>
 
-<!-- GALLERY -->
+<!-- VIDEO (DIRECT CLICK & PLAY) -->
 <section>
-    <h2>My Work Gallery</h2>
+    <h2>My Video</h2>
 
-    <div class="gallery">
-        <img src="https://via.placeholder.com/250">
-        <img src="https://via.placeholder.com/250">
-        <img src="https://via.placeholder.com/250">
-    </div>
-</section>
-
-<!-- VIDEOS -->
-<section>
-    <h2>My Videos</h2>
-
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2"></iframe>
+    <!-- Replace YOUR_VIDEO_ID -->
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
 </section>
 
 <!-- CTA -->
 <section class="cta">
     <h2>Ready to Grow Your Business?</h2>
-    <p>Contact now and get high-quality AI designs</p>
-
     <a href="https://wa.me/962778293108">
         <button class="btn">Chat on WhatsApp</button>
     </a>
 </section>
 
-<!-- FACEBOOK LINK -->
+<!-- FACEBOOK -->
 <section>
     <h2>Follow Me</h2>
     <a href="https://www.facebook.com/share/1DbF9sDvPD/" target="_blank">
