@@ -6,8 +6,6 @@
 <title>Arshad AI Ad Studio</title>
 
 <style>
-
-/* BACKGROUND GRADIENT */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -18,48 +16,34 @@ body {
 /* NAVBAR */
 .navbar {
     background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 15px 20px;
+    padding: 15px;
     text-align: center;
-    backdrop-filter: blur(10px);
 }
 .logo {
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 /* HERO */
 .hero {
     padding: 100px 20px;
     text-align: center;
-    animation: fadeIn 1.5s ease-in-out;
 }
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
-    animation: slideDown 1s ease-in-out;
 }
 .hero p {
     font-size: 18px;
-    line-height: 1.6;
     max-width: 900px;
     margin: auto;
 }
 .btn {
     margin-top: 20px;
     padding: 12px 25px;
-    border: none;
     background: #00c6ff;
-    color: #000;
-    font-weight: bold;
+    border: none;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.btn:hover {
-    transform: scale(1.05);
-    background: #00a6d6;
+    font-weight: bold;
 }
 
 /* BOX */
@@ -70,25 +54,19 @@ body {
 
 /* SLIDER */
 .slider {
-    width: 100%;
     max-width: 650px;
     margin: auto;
     overflow: hidden;
-    border-radius: 10px;
 }
-
 .slides {
     display: flex;
     width: 300%;
     animation: slide 10s infinite;
 }
-
 .slides img,
 .slides iframe {
     width: 100%;
     height: 300px;
-    flex-shrink: 0;
-    border-radius: 10px;
 }
 
 @keyframes slide {
@@ -103,25 +81,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
-
 .service-card {
     padding: 15px;
     background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
     width: 160px;
-    transition: 0.4s;
     border-radius: 8px;
-    backdrop-filter: blur(8px);
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    background: rgba(0,198,255,0.3);
-}
-
-/* DESCRIPTION */
+/* DESCRIPTION (NOW FIXED BELOW) */
 .description {
     padding: 60px 20px;
     max-width: 1000px;
@@ -129,7 +98,6 @@ body {
     line-height: 1.7;
     background: rgba(0,0,0,0.3);
     border-radius: 10px;
-    backdrop-filter: blur(8px);
 }
 
 /* FOOTER */
@@ -139,34 +107,17 @@ body {
     color: #ddd;
 }
 
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes slideDown {
-    from {transform: translateY(-50px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
-}
-
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
-    color: #fff;
     padding: 15px;
     border-radius: 50px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.3s;
 }
-.whatsapp:hover {
-    transform: scale(1.1);
-}
-
 </style>
 
 </head>
@@ -181,9 +132,7 @@ body {
 <!-- HERO -->
 <div class="hero">
     <h1>Create with AI</h1>
-    <p>
-        I create YouTube thumbnails, logos, Facebook ads, video editing, AI designs and professional marketing visuals that help your brand grow fast.
-    </p>
+    <p>Professional logo, thumbnails, ads & AI creative designs</p>
     <button class="btn">Get Started</button>
 </div>
 
@@ -203,9 +152,9 @@ body {
 
     <div class="slider">
         <div class="slides">
-            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA"></iframe>
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA"></iframe>
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA"></iframe>
         </div>
     </div>
 </div>
@@ -215,8 +164,8 @@ body {
     <h2>Our Services</h2>
 
     <div class="services">
-        <div class="service-card">Thumbnail Design</div>
-        <div class="service-card">Logo Design</div>
+        <div class="service-card">Thumbnail</div>
+        <div class="service-card">Logo</div>
         <div class="service-card">Facebook Ads</div>
         <div class="service-card">YouTube Ads</div>
         <div class="service-card">Video Editing</div>
@@ -224,14 +173,15 @@ body {
     </div>
 </div>
 
-<!-- DESCRIPTION -->
+<!-- DESCRIPTION (MOVED DOWN CORRECTLY) -->
 <div class="description">
     <p>
-        At Arshad AI Ad Studio, we provide high-quality creative solutions that help brands grow in the digital world. We design logos, YouTube thumbnails, social media ads, and professional marketing visuals.
+        At Arshad AI Ad Studio, we are dedicated to delivering high-quality professional visuals that help your brand grow.
+        We design logos, YouTube thumbnails, Facebook ads, and marketing creatives.
         <br><br>
-        We also convert simple product images into premium advertising visuals suitable for Amazon, Flipkart and social media marketing campaigns.
+        We also convert simple product images into premium advertisement visuals for Amazon, Flipkart and social media campaigns.
         <br><br>
-        Contact us today and transform your ideas into powerful visuals.
+        Our goal is to turn your ideas into powerful visuals that attract attention and increase sales.
     </p>
 </div>
 
@@ -240,9 +190,9 @@ body {
     © 2026 Arshad AI Ad Studio
 </div>
 
-<!-- WHATSAPP BUTTON -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/9620778293108" target="_blank">
-    WhatsApp Us
+    WhatsApp
 </a>
 
 </body>
