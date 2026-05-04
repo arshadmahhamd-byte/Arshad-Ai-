@@ -8,94 +8,93 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0b0f1a;
-    color: white;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
 }
 
 /* Navbar */
 .navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(10px);
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
 }
-
 .logo {
-    font-size: 26px;
-    color: #00e6ff;
-    text-shadow: 0 0 15px #00e6ff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Hero */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 60px;
-    color: #00e6ff;
-    text-shadow: 0 0 25px #00e6ff;
-}
-
-.hero p {
-    color: #ccc;
-}
-
-/* Button */
-.btn {
-    padding: 12px 30px;
     background: #00e6ff;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn {
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    background: #000;
+    color: #fff;
     cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #00bcd4;
-    transform: scale(1.05);
-}
-
-/* Glass Box */
+/* Box */
 .box {
-    background: rgba(255,255,255,0.05);
-    margin: 30px;
-    padding: 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(15px);
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* Images */
-.images img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
+/* Slider */
+.slider {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
 }
 
-.images img:hover {
-    transform: scale(1.1);
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
 }
 
-/* Services Grid */
+.slides img,
+.slides iframe {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+/* Services */
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 .service-card {
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 200px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 150px;
     transition: 0.3s;
 }
 
@@ -122,29 +121,39 @@ body {
 
 <div class="hero">
     <h1>Create with AI</h1>
-    <p>Logos, Thumbnails, Ads & Full Creative Design</p>
+    <p>I create YouTube thumbnails, logos, video editing, Facebook ads, YouTube ads & AI designs.</p>
     <button class="btn">Get Started</button>
 </div>
 
+<!-- MY WORK SECTION -->
 <div class="box">
-    <h2>Our Work</h2>
+    <h2>My Work</h2>
 
-    <div class="images">
-        <img src="image1.jpg">
-        <img src="image2.jpg">
-        <img src="image3.jpg">
+    <div class="slider">
 
-        <!-- 🎬 YOUTUBE VIDEO -->
-        <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/xjNy96NBqnA"
-        frameborder="0" allowfullscreen>
-        </iframe>
+        <div class="slides">
+            <img src="image1.jpg">
+            <img src="image2.jpg">
+            <img src="image3.jpg">
+        </div>
 
+    </div>
+
+    <br><br>
+
+    <div class="slider">
+        <div class="slides">
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/xjNy96NBqnA" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 
+<!-- SERVICES -->
 <div class="box">
     <h2>Our Services</h2>
+
     <div class="services">
         <div class="service-card">Thumbnail Design</div>
         <div class="service-card">Logo Design</div>
@@ -155,6 +164,7 @@ body {
     </div>
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
     © 2026 Arshad AI Ad Studio
 </div>
