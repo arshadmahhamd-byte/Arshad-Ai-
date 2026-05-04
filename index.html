@@ -13,7 +13,6 @@ body{
     font-family:'Poppins',sans-serif;
     background:linear-gradient(135deg,#020617,#1e3a8a,#0ea5e9,#020617);
     color:#fff;
-    overflow-x:hidden;
 }
 
 /* HEADER */
@@ -23,43 +22,33 @@ header{
     background:#ffffff;
     padding:15px;
     text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
 
-/* LOGO ANIMATION */
+/* LOGO (3D ANIMATION) */
 .logo{
     font-size:34px;
     font-weight:900;
     background:linear-gradient(45deg,#38bdf8,#a78bfa,#22c55e,#facc15,#f43f5e);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    animation:glow 3s infinite alternate;
+    display:inline-block;
+    animation:float3d 5s infinite ease-in-out;
 }
 
-@keyframes glow{
-    0%{filter:drop-shadow(0 0 5px #38bdf8);}
-    100%{filter:drop-shadow(0 0 20px #f43f5e);}
+@keyframes float3d{
+    0%{transform:translateY(0px) rotateY(0deg); filter:drop-shadow(0 0 5px #38bdf8);}
+    50%{transform:translateY(-5px) rotateY(10deg); filter:drop-shadow(0 0 20px #a78bfa);}
+    100%{transform:translateY(0px) rotateY(0deg); filter:drop-shadow(0 0 5px #22c55e);}
 }
 
 /* HERO */
 .hero{
     text-align:center;
-    padding:90px 20px;
-    animation:fadeIn 1.5s ease-in-out;
+    padding:80px 20px;
 }
 
 .hero h1{
-    font-size:42px;
-}
-
-.hero p{
-    opacity:0.8;
-}
-
-/* FADE */
-@keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
-    to{opacity:1; transform:translateY(0);}
+    font-size:40px;
 }
 
 /* BUTTON */
@@ -72,15 +61,9 @@ header{
     color:#000;
     font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-.btn:hover{
-    transform:scale(1.1);
-}
-
-/* SECTIONS */
+/* SECTION */
 section{
     padding:60px 20px;
     text-align:center;
@@ -88,39 +71,29 @@ section{
 
 /* CARDS */
 .card{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
+    background:rgba(30,41,59,0.6);
+    backdrop-filter:blur(8px);
     padding:20px;
     margin:15px;
     border-radius:15px;
     display:inline-block;
     width:250px;
-    transition:0.4s;
-    border:1px solid rgba(255,255,255,0.1);
-}
-
-.card:hover{
-    transform:translateY(-10px) scale(1.05);
-    background:rgba(255,255,255,0.15);
 }
 
 /* VIDEO */
 iframe{
     width:90%;
-    max-width:650px;
-    height:360px;
+    max-width:600px;
+    height:320px;
     border-radius:15px;
     margin:10px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* CTA */
 .cta{
     background:linear-gradient(135deg,#38bdf8,#a78bfa,#22c55e);
-    padding:60px;
+    padding:50px;
     color:#000;
-    border-radius:20px;
-    margin:20px;
 }
 
 /* WHATSAPP */
@@ -131,18 +104,16 @@ iframe{
     background:#25D366;
     padding:15px;
     border-radius:50%;
-    font-size:20px;
-    color:#fff;
     text-decoration:none;
-    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    color:#fff;
 }
 
 /* FOOTER */
 footer{
     background:linear-gradient(135deg,#020617,#1e293b);
-    padding:40px;
-    line-height:1.7;
-    text-align:center;
+    padding:30px;
+    line-height:1.6;
+    text-align:left;
 }
 </style>
 </head>
@@ -155,8 +126,8 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-    <h1>We Create Powerful AI Ads & Designs</h1>
-    <p>Professional visuals that grow your business</p>
+    <h1>Create Powerful AI Ads & Designs</h1>
+    <p>We turn your ideas into professional visuals</p>
     <a href="https://wa.me/962778293108">
         <button class="btn">Order Now</button>
     </a>
@@ -179,7 +150,6 @@ footer{
 
     <iframe 
         src="https://www.youtube.com/embed/xjNy96NBqnA"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
 </section>
@@ -203,19 +173,35 @@ footer{
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/962778293108" class="whatsapp">💬</a>
 
-<!-- FOOTER -->
+<!-- FOOTER (FULL DESCRIPTION RESTORED) -->
 <footer>
 
 <p>
-Arshad AI Ads Studio delivers high-quality professional visual content including logos, thumbnails, ads, and AI product designs to help your brand stand out.
+Arshad AI Ads Studio is dedicated to delivering high-quality and professional visual content that helps your brand stand out in today’s competitive digital world. Our goal is to turn your ideas into powerful visuals that attract attention and drive results.
 </p>
 
-<p>
-We transform simple ideas into powerful marketing visuals that attract attention and drive results.
-</p>
+<br><br>
 
 <p>
-Contact us today and take your brand to the next level.
+We specialize in creating unique logo designs, eye-catching YouTube thumbnails, and high-converting Facebook and social media ads. Whether you are a content creator, business owner, or brand, we provide creative solutions tailored to your needs.
+</p>
+
+<br><br>
+
+<p>
+One of our key strengths is transforming simple images into professional-level visuals. You can provide us with a basic product image, and we will convert it into a premium product photoshoot. Whether it’s a perfume bottle, chocolate, biscuit, clothing item, or any other product, we design it in a way that looks perfect for advertisements and e-commerce platforms like Amazon or Flipkart.
+</p>
+
+<br><br>
+
+<p>
+We also create model-style product presentations and professional advertising creatives that are ready to use in marketing campaigns. From basic images to advanced visual concepts, everything is handled with creativity and precision.
+</p>
+
+<br><br>
+
+<p>
+Contact Arshad AI Ads Studio today and let us transform your simple ideas into stunning, professional designs that elevate your brand.
 </p>
 
 <p style="margin-top:20px;">© 2026 Arshad AI Ads Studio</p>
